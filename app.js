@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
 //database
-mongoose.connect("mongodb+srv://Nov0:nov0@nov0.klonhmq.mongodb.net/todolistDB",{useNewUrlParser : true});
+mongoose.connect("mongodb+srv://<User>:<pass>@nov0.klonhmq.mongodb.net/todolistDB",{useNewUrlParser : true});
 
 //schema
 const itemSchema = {
